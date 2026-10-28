@@ -114,7 +114,10 @@ section{padding-block:72px 0}
 .swipe:focus-visible{outline:2px solid var(--red);outline-offset:4px}
 
 /* number */
-.big{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.big{display:flex;align-items:flex-end;gap:16px;flex-wrap:nowrap}
+.big p{min-width:0}
+#summer{padding-top:28px}
+@media (min-width:900px){#summer{padding-top:64px}}
 .big .n{font-weight:900;font-size:clamp(64px,17vw,150px);line-height:.8;letter-spacing:-.055em;color:var(--red)}
 
 /* definition rows (craft, editors, contact) */
@@ -237,7 +240,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
   </div>
 
   <div class="wrap gap-l">
-    <div class="big rv"><span class="n">122</span><p class="lede" style="padding-bottom:6px;font-size:clamp(14px,2vw,18px);line-height:1.35"><b>Pieces in total, each one numbered.</b><br>8–25 per colourway.</p></div>
+    <div class="big rv"><span class="n">122</span><p class="lede" style="padding-bottom:6px;font-size:clamp(14px,2vw,18px);line-height:1.35"><b>Pieces in total,<br>each one numbered.</b><br>8–25 per colourway.</p></div>
   </div>
   <figure class="full gap-m rv"><img src="img/s3016.jpg" width="1400" height="964" alt="Two women in pale blue striped suits seated on the floor by a window" loading="lazy"></figure>
   <div class="wrap pair gap-s rv">
@@ -255,7 +258,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
   </div>
   <figure class="full gap-m rv"><img src="img/s2942.jpg" width="1080" height="1350" alt="A family in matching red striped pyjama suits, the children upside down on the bed" loading="lazy"></figure>
   <div class="wrap stack gap-m center" style="gap:16px">
-    <p class="lede rv">Any piece from the collection, <b>a shirt, a suit, anything we make,</b> can be produced in a children’s size,<br><b class="red" style="white-space:nowrap">cut to individual measurements.</b></p>
+    <p class="lede rv">Any piece from the collection,<br><b>a shirt, a suit, anything we make,</b><br>can be produced in a children’s size,<br><b class="red" style="white-space:nowrap">cut to individual measurements.</b></p>
     <p class="lede rv">Not a smaller version scaled to a standard size chart. The same process we use for adults: we take the child’s measurements and build the piece to fit exactly, with <b>the same cut, the same fabric, the same attention to detail.</b></p>
   </div>
   <div class="wrap pair gap-m rv">
