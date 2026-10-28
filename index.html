@@ -71,9 +71,14 @@ section{padding-block:72px 0}
 .mission{padding-block:56px 8px}
 .mission p{margin:0;font-weight:900;color:var(--red);font-size:clamp(30px,8.2vw,84px);line-height:.95;letter-spacing:-.035em;max-width:14ch;text-wrap:balance}
 .mission .note{margin-top:4px}
-.mission{text-align:center;padding-top:40px}
+.mission{text-align:center;padding-top:44px;padding-bottom:44px}
+.lines.centered li{text-align:center}
+.after-lines{padding-top:28px}
+.sonya-photo{margin-top:32px}
+@media (min-width:900px){.sonya-photo{margin-top:0}}
 .mission p{margin-left:auto;margin-right:auto;max-width:none;font-size:clamp(24px,7.6vw,96px);line-height:1}
-.mission p .fit{line-height:.98}
+.mission p{font-size:0;line-height:0}
+.mission p .fit{line-height:.98;font-size:clamp(24px,7.6vw,96px);vertical-align:top}
 .mission .ml{white-space:nowrap}
 
 /* manifesto lines */
@@ -159,11 +164,11 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
 <!-- MISSION -->
 <div class="mission wrap" data-ch="Press kit 2026">
   <div class="rv">
-    <p><span class="fit" data-fit="size" data-scale="0.94" data-max="104">Dedicated to simplify<br>the art of dressing.</span></p>
+    <p><span class="fit" data-fit="size" data-scale="1" data-max="128">Dedicated to simplify<br>the art of dressing.</span></p>
     <div class="note">The single idea behind every piece we make</div>
   </div>
 </div>
-<figure class="full gap-l rv"><img src="img/s3013b.jpg" width="965" height="1400" alt="Woman in oversized round sunglasses and a grey striped suit sitting on the floor by a window with blinds" loading="lazy"></figure>
+<figure class="full rv"><img src="img/s3013b.jpg" width="965" height="1400" alt="Woman in oversized round sunglasses and a grey striped suit sitting on the floor by a window with blinds" loading="lazy"></figure>
 <figure class="full gap-s rv"><img src="img/s2901.jpg" width="1080" height="1350" alt="Woman in a silk headscarf and round sunglasses holding a large bouquet, in striped trousers on a sunlit terrace" loading="lazy"></figure>
 
 <!-- 01 THE HOUSE -->
@@ -174,14 +179,16 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
   </div>
   <figure class="full gap-m rv"><img src="img/s05.jpg" width="1120" height="1400" alt="Model in an oversized striped shirt reclining on a sofa"></figure>
   <div class="wrap gap-m">
-    <ul class="lines">
+    <ul class="lines centered">
       <li class="rv"><span class="red">No</span> mass production.</li>
       <li class="rv">Limited runs, <span class="red">made in-house.</span></li>
       <li class="rv">Local artisans, paid <span class="red">the real cost</span> of making.</li>
       <li class="rv">Italian deadstock: <span class="red">the cloth decides</span> how many exist.</li>
       <li class="rv">Every piece <span class="red">numbered.</span> Every owner knows how few there are.</li>
     </ul>
-    <p class="lede gap-m rv">Cut to flatter every body type, easy to care for and <b>made to outlast the season.</b> Fashion that serves both the wearer and the world.</p>
+    <div class="after-lines center stack rv">
+      <p class="lede">Fashion that serves both the wearer and the world. Cut to flatter every body type, easy to care for and <b>made to outlast the season.</b></p>
+    </div>
   </div>
   <div class="wrap pair gap-m rv">
     <figure style="flex:0.8"><img src="img/s04.jpg" width="1080" height="1350" alt="Two women in a greenhouse doorway, one in a green striped suit and one in a red striped suit" loading="lazy"></figure>
@@ -198,7 +205,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
       <figure class="gap-s rv"><img src="img/f02c.jpg" width="933" height="1185" alt="Ivan Suprun in a navy half-zip sweatshirt on a blue chair at his desk" loading="lazy"></figure>
     </div>
     <div class="stack gap-m center">
-      <p class="quote rv">“After working with clothes for more than fifteen years, I can confidently say that <b>there is no need to implement rocket science into your designs.</b> Everything needs to be understandable, and clothes are no exception. <b class="red">I wanted to create a brand where you can buy five pieces and be fully prepared for any occasion.</b>”</p>
+      <p class="quote rv">“After working with clothes for more than fifteen years, I can confidently say that <b>there is no need to implement rocket science into your designs.</b> Everything needs to be understandable, and clothes are no exception.<br><b class="red">I wanted to create a brand where you can buy five pieces and be fully prepared for any occasion.</b>”</p>
       <div class="note rv">Ivan Suprun · Founder &amp; Creative Director</div>
     </div>
   </div>
@@ -212,7 +219,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
   </div>
   <figure class="full gap-m rv"><img src="img/s07.jpg" width="1119" height="1400" alt="Model in a striped shirt and trousers holding a black bag and a bouquet of flowers" loading="lazy"></figure>
   <div class="wrap stack gap-m center" style="gap:18px">
-    <p class="lede rv"><b>One signature cut,</b> a press-stud shirt with stud-fastened side vents and straight trousers, in <b class="red">seven numbered colourways,</b> Nos. 20–26. Designed to be mixed, never sold as sets.</p>
+    <p class="lede rv"><b>One signature cut,</b> a press-stud shirt with stud-fastened side vents and straight trousers, in <b class="red">seven numbered colourways,</b> №&nbsp;20–26. Designed to be mixed, never sold as sets.</p>
     <div class="colours rv"><span>Coral Loom</span><span>Pale Blue</span><span>Greenhouse</span><span>Burgundy</span><span>Tobacco Line</span><span>Purple Grey</span><span>Sand Hour</span></div>
   </div>
   <figure class="wrap gap-m rv"><img src="img/s03.jpg" width="1120" height="1400" alt="Model in a burgundy striped shirt with a black polka-dot scarf and sunglasses" loading="lazy"></figure>
@@ -230,7 +237,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
   </div>
 
   <div class="wrap gap-l">
-    <div class="big rv"><span class="n">122</span><p class="lede" style="padding-bottom:4px"><b>Pieces in total.</b><br>8–25 per colourway,<br>each one numbered.</p></div>
+    <div class="big rv"><span class="n">122</span><p class="lede" style="padding-bottom:6px;font-size:clamp(14px,2vw,18px);line-height:1.35"><b>Pieces in total, each one numbered.</b><br>8–25 per colourway.</p></div>
   </div>
   <figure class="full gap-m rv"><img src="img/s3016.jpg" width="1400" height="964" alt="Two women in pale blue striped suits seated on the floor by a window" loading="lazy"></figure>
   <div class="wrap pair gap-s rv">
@@ -248,7 +255,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
   </div>
   <figure class="full gap-m rv"><img src="img/s2942.jpg" width="1080" height="1350" alt="A family in matching red striped pyjama suits, the children upside down on the bed" loading="lazy"></figure>
   <div class="wrap stack gap-m center" style="gap:16px">
-    <p class="lede rv">Any piece from the collection, <b>a shirt, a suit, anything we make,</b> can be produced in a children’s size, <b class="red">cut to individual measurements.</b></p>
+    <p class="lede rv">Any piece from the collection, <b>a shirt, a suit, anything we make,</b> can be produced in a children’s size,<br><b class="red" style="white-space:nowrap">cut to individual measurements.</b></p>
     <p class="lede rv">Not a smaller version scaled to a standard size chart. The same process we use for adults: we take the child’s measurements and build the piece to fit exactly, with <b>the same cut, the same fabric, the same attention to detail.</b></p>
   </div>
   <div class="wrap pair gap-m rv">
@@ -257,7 +264,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
   </div>
   <div class="wrap gap-l">
     <ul class="lines center">
-      <li class="rv">The simplest way to build <span class="red">a&nbsp;true family look:</span> parents and children in the same piece, each in a size of their own.</li>
+      <li class="rv">The simplest way to build<br><span class="red" style="white-space:nowrap">a true family look:</span><br>parents and children in the same piece, each in a size of their own.</li>
     </ul>
   </div>
   <figure class="full gap-l rv"><img src="img/s2946.jpg" width="1080" height="1350" alt="A mother and three children in red striped pyjamas lying across a sunlit bed" loading="lazy"></figure>
@@ -291,11 +298,11 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
   <div class="wrap gap-m split">
     <div class="stack">
       <div class="stack rv center" style="gap:10px">
-        <p class="quote">“People are at the centre of everything we do. <b>We support local artisans by paying the real cost of making,</b> not a cost cut down by mass production.”</p>
+        <p class="quote">“People are at the centre of everything we do. <b>We support <span class="red">local artisans</span> by paying <span class="red">the real cost</span> of making,</b> not a cost cut down by mass production.”</p>
         <div class="note">Sonya Suprun · Co-founder &amp; CEO</div>
       </div>
     </div>
-    <figure class="rv"><img src="img/f01c.jpg" width="933" height="1100" alt="Sonya and Ivan Suprun in blue check shirts in a wood-panelled room" loading="lazy"></figure>
+    <figure class="rv sonya-photo"><img src="img/f01c.jpg" width="933" height="1100" alt="Sonya and Ivan Suprun in blue check shirts in a wood-panelled room" loading="lazy"></figure>
   </div>
 </section>
 
