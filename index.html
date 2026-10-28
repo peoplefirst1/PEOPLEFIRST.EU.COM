@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="People First — a limited-run European design house. Press kit 2026.">
+<meta property="og:title" content="People First — Press Kit 2026">
+<meta property="og:description" content="A limited-run European design house. Every piece numbered.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/s01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<title>People First Press Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap">
+<style>
+/* Layout: one scrolling editorial column. Photos lead, uncropped, full width or in equal-height pairs.
+   Text has four roles only, always on the same left edge: kicker (chapter), display (one idea), lede (one or two sentences), note (detail). */
+:root{
+  --paper:#F2F0EC;
+  --ink:#121212;
+  --red:#C8261C;
+  --mute:#5F5B55;
+  --line:#121212;
+  --face:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --gut:max(16px, env(safe-area-inset-left, 0px));
+  --gutR:max(16px, env(safe-area-inset-right, 0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--face);text-transform:uppercase;font-size:14px;line-height:1.5;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+img{max-width:100%;height:auto;display:block}
+figure{margin:0}
+b,strong{font-weight:800}
+.red{color:var(--red)}
+
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--paper);padding:14px var(--gutR) 12px var(--gut);display:flex;justify-content:space-between;align-items:baseline;gap:16px;font-size:11px;font-weight:600;letter-spacing:.18em}
+.bar a{color:inherit;text-decoration:none}
+.bar .ch{color:var(--red);text-align:right}
+.prog{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);height:2px;z-index:11;background:var(--red);transform-origin:0 50%;transform:scaleX(0)}
+
+/* frame */
+.wrap{max-width:1120px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gutR)}
+.full{max-width:1120px;margin:0 auto}
+section{padding-block:72px 0}
+.gap-s{margin-top:14px}.gap-m{margin-top:28px}.gap-l{margin-top:48px}
+.stack{display:flex;flex-direction:column;gap:14px}
+
+/* the four text roles */
+.kicker{font-size:11px;font-weight:600;letter-spacing:.2em;color:var(--red);display:flex;gap:12px}
+.kicker span{color:var(--ink)}
+.display{margin:0;font-weight:800;font-size:clamp(24px,5.6vw,46px);line-height:1.02;letter-spacing:-.02em;max-width:22ch;text-wrap:balance}
+.lede{margin:0;font-size:clamp(14px,1.7vw,16px);line-height:1.55;max-width:46ch;text-wrap:pretty}
+.note{margin:0;font-size:11px;font-weight:500;line-height:1.6;letter-spacing:.16em;color:var(--mute)}
+
+/* hero */
+.hero{padding-block:0}
+.mark{margin:0;font-weight:900;font-size:clamp(34px,11.4vw,124px);line-height:.9;letter-spacing:-.05em;white-space:nowrap}
+.hero-meta{display:flex;justify-content:space-between;align-items:baseline;gap:20px;font-size:11px;font-weight:600;letter-spacing:.18em;line-height:1.6}
+.hero .mark{text-align:center}
+.hero-meta{justify-content:center}
+.hero-meta .tag{color:var(--mute);min-width:0;text-align:center;font-size:11px;white-space:nowrap}
+.fit{display:inline-block;white-space:nowrap}
+.hero-meta .kit{white-space:nowrap}
+
+/* mission */
+.mission{padding-block:56px 8px}
+.mission p{margin:0;font-weight:900;color:var(--red);font-size:clamp(30px,8.2vw,84px);line-height:.95;letter-spacing:-.035em;max-width:14ch;text-wrap:balance}
+.mission .note{margin-top:4px}
+.mission{text-align:center;padding-top:40px}
+.mission p{margin-left:auto;margin-right:auto;max-width:none;font-size:clamp(24px,7.6vw,96px);line-height:1}
+.mission p .fit{line-height:.98}
+.mission .ml{white-space:nowrap}
+
+/* manifesto lines */
+.lines{list-style:none;margin:0;padding:0}
+.lines li{border-top:1px solid var(--line);padding:16px 0 18px;font-weight:800;font-size:clamp(19px,4.4vw,34px);line-height:1.08;letter-spacing:-.015em;text-wrap:balance}
+.lines li:last-child{border-bottom:1px solid var(--line)}
+
+/* photo pairs: equal heights, never cropped (flex share = aspect ratio) */
+.pair{display:flex;gap:8px;align-items:flex-start}
+.pair>figure{min-width:0}
+.pair img{width:100%}
+
+/* quote */
+.quote{margin:0;font-weight:300;font-size:clamp(17px,3vw,26px);line-height:1.28;letter-spacing:-.005em;max-width:32ch;text-wrap:pretty}
+.quote b{font-weight:800}
+
+/* centred blocks */
+.center{text-align:center;align-items:center}
+.center .quote,.center .lede,.center .display{margin-left:auto;margin-right:auto}
+.center .colours{justify-content:center}
+.lines.center li{text-wrap:balance}
+
+/* colourways */
+.colours{display:flex;flex-wrap:wrap;gap:6px}
+.colours span{border:1px solid var(--ink);padding:6px 9px 5px;font-size:11px;font-weight:600;letter-spacing:.14em}
+
+/* swipe gallery */
+.swipe-head{display:flex;justify-content:space-between;align-items:baseline}
+.swipe{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding-left:var(--gut);padding-right:var(--gutR);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.swipe::-webkit-scrollbar{display:none}
+.swipe img{height:min(64vh,580px);width:auto;max-width:none;flex:none;scroll-snap-align:center}
+.swipe:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+
+/* number */
+.big{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.big .n{font-weight:900;font-size:clamp(64px,17vw,150px);line-height:.8;letter-spacing:-.055em;color:var(--red)}
+
+/* definition rows (craft, editors, contact) */
+.rows{margin:0;display:flex;flex-direction:column}
+.rows>div{border-top:1px solid var(--line);padding:12px 0 14px;display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px}
+.rows>div:last-child{border-bottom:1px solid var(--line)}
+.rows dt{font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--red);padding-top:4px}
+.rows dd{margin:0;font-size:14px;line-height:1.5;min-width:0;overflow-wrap:anywhere}
+.rows dd a{color:var(--red);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.rows dd b a{color:var(--ink)}
+.rows dd a:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.rows dd b{display:block;font-size:clamp(15px,2.4vw,19px);letter-spacing:-.005em;line-height:1.2;margin-bottom:4px}
+
+.end{padding-block:56px 24px}
+footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-weight:600;letter-spacing:.18em;color:var(--mute);padding-top:16px}
+
+/* reveal on scroll: only what starts below the first screen is hidden, and only with JS */
+.js .rv.pre{opacity:0;transform:translateY(22px)}
+.js .rv{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){.js .rv.pre{opacity:1;transform:none}.js .rv{transition:none}html{scroll-behavior:auto}}
+
+@media (min-width:900px){
+  section{padding-block:120px 0}
+  .bar{font-size:12px;padding-top:18px;padding-bottom:16px}
+  .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:end}
+  .split.top{align-items:start}
+  .pair{gap:14px}
+}
+</style>
+</head>
+<body>
+
+
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<main>
+
+<!-- HERO -->
+<div class="hero" data-ch="Press kit 2026">
+  <div class="wrap stack" style="gap:6px;padding-top:20px;padding-bottom:18px">
+    <h1 class="mark"><span class="fit" data-fit="size">People First</span></h1>
+    <div class="hero-meta"><span class="tag fit" data-fit="spread">A limited-run design house based in Europe</span></div>
+  </div>
+  <figure class="full"><img src="img/s01.jpg" width="1119" height="1400" alt="Two models in burgundy striped shirts and trousers in a wood-panelled office, one seated on the desk, one on the floor"></figure>
+</div>
+
+<!-- MISSION -->
+<div class="mission wrap" data-ch="Press kit 2026">
+  <div class="rv">
+    <p><span class="fit" data-fit="size" data-scale="0.94" data-max="104">Dedicated to simplify<br>the art of dressing.</span></p>
+    <div class="note">The single idea behind every piece we make</div>
+  </div>
+</div>
+<figure class="full gap-l rv"><img src="img/s2901.jpg" width="1080" height="1350" alt="Woman in a silk headscarf and round sunglasses holding a large bouquet, in striped trousers on a sunlit terrace" loading="lazy"></figure>
+
+<!-- 01 THE HOUSE -->
+<section id="house" data-ch="01 — The house">
+  <div class="wrap stack">
+    <div class="kicker rv">01 <span>The house</span></div>
+    <h2 class="display rv">We make fewer clothes, and make every one of them count.</h2>
+  </div>
+  <figure class="full gap-m rv"><img src="img/s05.jpg" width="1120" height="1400" alt="Model in an oversized striped shirt reclining on a sofa"></figure>
+  <div class="wrap gap-m">
+    <ul class="lines">
+      <li class="rv"><span class="red">No</span> mass production.</li>
+      <li class="rv">Limited runs, <span class="red">made in-house.</span></li>
+      <li class="rv">Local artisans, paid <span class="red">the real cost</span> of making.</li>
+      <li class="rv">Italian deadstock: <span class="red">the cloth decides</span> how many exist.</li>
+      <li class="rv">Every piece <span class="red">numbered.</span> Every owner knows how few there are.</li>
+    </ul>
+    <p class="lede gap-m rv">Cut to flatter every body type, easy to care for and <b>made to outlast the season.</b> Fashion that serves both the wearer and the world.</p>
+  </div>
+  <div class="wrap pair gap-m rv">
+    <figure style="flex:0.8"><img src="img/s04.jpg" width="1080" height="1350" alt="Two women in a greenhouse doorway, one in a green striped suit and one in a red striped suit" loading="lazy"></figure>
+    <figure style="flex:0.8"><img src="img/s06clean.jpg" width="1119" height="1400" alt="Two women embracing among greenhouse plants, one in a green striped suit and one in a red striped suit" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- 02 THE FOUNDER -->
+<section id="founder" data-ch="02 — The founder">
+  <div class="wrap split top">
+    <div class="stack">
+      <div class="kicker rv">02 <span>The founder</span></div>
+      <h2 class="display rv">Fifteen years in fashion taught him what to leave out.</h2>
+      <figure class="gap-s rv"><img src="img/f02c.jpg" width="933" height="1185" alt="Ivan Suprun in a navy half-zip sweatshirt on a blue chair at his desk" loading="lazy"></figure>
+    </div>
+    <div class="stack gap-m center">
+      <p class="quote rv">“After working with clothes for more than fifteen years, I can confidently say that <b>there is no need to implement rocket science into your designs.</b> Everything needs to be understandable, and clothes are no exception. <b class="red">I wanted to create a brand where you can buy five pieces and be fully prepared for any occasion.</b>”</p>
+      <div class="note rv">Ivan Suprun · Founder &amp; Creative Director</div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 SUMMER -->
+<section id="summer" data-ch="03 — The Long Afternoon">
+  <div class="wrap stack">
+    <div class="kicker rv">03 <span>Summer 2026 · Volume 05</span></div>
+    <h2 class="display rv" style="font-size:clamp(34px,9vw,92px);line-height:.9;letter-spacing:-.035em">The Long Afternoon</h2>
+  </div>
+  <figure class="full gap-m rv"><img src="img/s07.jpg" width="1119" height="1400" alt="Model in a striped shirt and trousers holding a black bag and a bouquet of flowers" loading="lazy"></figure>
+  <div class="wrap stack gap-m center" style="gap:18px">
+    <p class="lede rv"><b>One signature cut,</b> a press-stud shirt with stud-fastened side vents and straight trousers, in <b class="red">seven numbered colourways,</b> Nos. 20–26. Designed to be mixed, never sold as sets.</p>
+    <div class="colours rv"><span>Coral Loom</span><span>Pale Blue</span><span>Greenhouse</span><span>Burgundy</span><span>Tobacco Line</span><span>Purple Grey</span><span>Sand Hour</span></div>
+  </div>
+  <figure class="wrap gap-m rv"><img src="img/s03.jpg" width="1120" height="1400" alt="Model in a burgundy striped shirt with a black polka-dot scarf and sunglasses" loading="lazy"></figure>
+
+  <div class="wrap swipe-head gap-l"><span class="note">The colourways</span><span class="note red">Swipe →</span></div>
+  <div class="swipe gap-s rv" tabindex="0" aria-label="Summer 2026 gallery, scroll sideways">
+    <img src="img/s2856.jpg" width="1094" height="1400" alt="Model in oversized sunglasses and a striped shirt, reclining" loading="lazy">
+    <img src="img/s3024.jpg" width="1119" height="1400" alt="Model in a pale striped suit and cap lying in front of a red cabinet" loading="lazy">
+    <img src="img/s3040.jpg" width="1119" height="1400" alt="Model in a tobacco-brown suit by a window with blinds" loading="lazy">
+    <img src="img/s3038.jpg" width="1120" height="1400" alt="Model in a tobacco-brown suit in a wood-panelled bedroom" loading="lazy">
+    <img src="img/s3005.jpg" width="1049" height="1400" alt="Model in a pale check shirt and cap in a garden" loading="lazy">
+    <img src="img/s3008.jpg" width="964" height="1400" alt="Model on a rope swing in a pale check shirt and trousers" loading="lazy">
+    <img src="img/s3010.jpg" width="965" height="1400" alt="Two people in pale check suits by a rope swing on a lawn" loading="lazy">
+    <img src="img/s3045.jpg" width="1120" height="1400" alt="Model in a check suit and cowboy hat seated by a floor lamp" loading="lazy">
+  </div>
+
+  <div class="wrap gap-l">
+    <div class="big rv"><span class="n">122</span><p class="lede" style="padding-bottom:4px"><b>Pieces in total.</b><br>8–25 per colourway,<br>each one numbered.</p></div>
+  </div>
+  <figure class="full gap-m rv"><img src="img/s3016.jpg" width="1400" height="964" alt="Two women in pale blue striped suits seated on the floor by a window" loading="lazy"></figure>
+  <div class="wrap pair gap-s rv">
+    <figure style="flex:0.689"><img src="img/s3004.jpg" width="964" height="1400" alt="Model in a pale check suit and cap lying on a bed" loading="lazy"></figure>
+    <figure style="flex:0.749"><img src="img/s3031.jpg" width="1049" height="1400" alt="Model in sunglasses, bandana and a striped shirt seated on a sofa" loading="lazy"></figure>
+  </div>
+  <figure class="full gap-s rv"><img src="img/s09.jpg" width="1400" height="1049" alt="Three people in striped and beige suits on a sofa in a wood-panelled room" loading="lazy"></figure>
+</section>
+
+<!-- 04 A SIZE OF THEIR OWN -->
+<section id="family" data-ch="04 — A size of their own">
+  <div class="wrap stack">
+    <div class="kicker rv">04 <span>A size of their own</span></div>
+    <h2 class="display rv">One piece. Every size in the family.</h2>
+  </div>
+  <figure class="full gap-m rv"><img src="img/s2942.jpg" width="1080" height="1350" alt="A family in matching red striped pyjama suits, the children upside down on the bed" loading="lazy"></figure>
+  <div class="wrap stack gap-m" style="gap:16px">
+    <p class="lede rv">Any piece from the collection, <b>a shirt, a suit, anything we make,</b> can be produced in a children’s size, <b class="red">cut to individual measurements.</b></p>
+    <p class="lede rv">Not a smaller version scaled to a standard size chart. The same process we use for adults: we take the child’s measurements and build the piece to fit exactly, with <b>the same cut, the same fabric, the same attention to detail.</b></p>
+  </div>
+  <div class="wrap pair gap-m rv">
+    <figure style="flex:0.8"><img src="img/s2938.jpg" width="1080" height="1350" alt="A little girl in a red striped pyjama shirt sitting on a parent’s lap" loading="lazy"></figure>
+    <figure style="flex:0.8"><img src="img/s2940.jpg" width="1080" height="1350" alt="A boy in a red striped pyjama suit standing in a living room" loading="lazy"></figure>
+  </div>
+  <div class="wrap gap-l">
+    <ul class="lines center">
+      <li class="rv">The simplest way to build <span class="red">a true family look:</span> parents and children in the same piece, each in a size of their own.</li>
+    </ul>
+  </div>
+  <figure class="full gap-l rv"><img src="img/s2946.jpg" width="1080" height="1350" alt="A mother and three children in red striped pyjamas lying across a sunlit bed" loading="lazy"></figure>
+  <figure class="wrap gap-s rv"><img src="img/s2959.jpg" width="1204" height="1400" alt="Two children in striped shirts lying cheek to cheek" loading="lazy"></figure>
+</section>
+
+<!-- 05 HOW IT IS MADE -->
+<section id="made" data-ch="05 — How it is made">
+  <div class="wrap stack">
+    <div class="kicker rv">05 <span>How it is made</span></div>
+    <h2 class="display rv">Made in numbers you can count.</h2>
+  </div>
+  <figure class="full gap-m rv"><img src="img/s3007.jpg" width="1400" height="1049" alt="Model standing on a low bench in a wood-panelled room with two floor lamps" loading="lazy"></figure>
+  <div class="wrap gap-m split top">
+    <dl class="rows">
+      <div class="rv"><dt>Cloth</dt><dd><b>Italian deadstock.</b>Fine fabric left over from larger productions. Less waste, and a run that ends when the cloth does.</dd></div>
+      <div class="rv"><dt>Hands</dt><dd><b>Small local ateliers.</b>Shirts shaped by true professionals with time-honoured techniques, paid the real cost of the work.</dd></div>
+      <div class="rv"><dt>Number</dt><dd><b>A postcard with every piece.</b>Your number, and how many were ever made in that exact pattern. A garment to pass on.</dd></div>
+    </dl>
+    <figure class="rv"><img src="img/s2927.jpg" width="1119" height="1400" alt="Model crouching in a cream shirt, black trousers and gold jewellery" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- 05 THE PEOPLE -->
+<section id="people" data-ch="06 — The people behind it">
+  <div class="wrap stack">
+    <div class="kicker rv">06 <span>The people behind it</span></div>
+    <h2 class="display rv">A brother, a sister and one simple idea.</h2>
+  </div>
+  <figure class="full gap-m rv"><img src="img/f03.jpg" width="1120" height="1400" alt="Ivan and Sonya Suprun in matching yellow check shirts on a sofa" loading="lazy"></figure>
+  <div class="wrap gap-m split">
+    <div class="stack">
+      <p class="lede rv"><b>Ivan Suprun,</b> Founder &amp; Creative Director, and <b>Sonya Suprun,</b> Co-founder &amp; CEO, both built their careers inside the fashion industry. Together they set out to prove that <b class="red">great basics never date.</b></p>
+      <div class="stack gap-m rv center" style="gap:10px">
+        <p class="quote">“People are at the centre of everything we do. <b>We support local artisans by paying the real cost of making,</b> not a cost cut down by mass production.”</p>
+        <div class="note">Sonya Suprun · Co-founder &amp; CEO</div>
+      </div>
+    </div>
+    <figure class="rv"><img src="img/f01c.jpg" width="933" height="1100" alt="Sonya and Ivan Suprun in blue check shirts in a wood-panelled room" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- 06 FOR EDITORS -->
+<section id="editors" data-ch="07 — For editors">
+  <div class="wrap stack">
+    <div class="kicker rv">07 <span>For editors</span></div>
+    <h2 class="display rv">Five reasons to write about People First.</h2>
+    <dl class="rows gap-s">
+      <div class="rv"><dt>Number</dt><dd><b>Clothes with a serial number.</b>Every piece is numbered and recorded on a postcard. A quiet answer to anonymous fashion.</dd></div>
+      <div class="rv"><dt>Scale</dt><dd><b>The house that says no to scale.</b>No mass production. Limited runs, made in-house.</dd></div>
+      <div class="rv"><dt>Cloth</dt><dd><b>Deadstock as a design brief.</b>Surplus Italian fabric decides how many pieces exist.</dd></div>
+      <div class="rv"><dt>Wardrobe</dt><dd><b>Five pieces, any occasion.</b>Ivan Suprun’s case for owning fewer, better clothes.</dd></div>
+      <div class="rv"><dt>Family</dt><dd><b>Built by siblings.</b>A brother and sister dividing the creative and the business.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-ch="Press &amp; contacts">
+  <div class="wrap stack">
+    <div class="kicker rv">Press <span>&amp; contacts</span></div>
+    <h2 class="display rv">Let’s talk.</h2>
+    <dl class="rows gap-s">
+      <div class="rv"><dt>Press</dt><dd><b>Press enquiries</b><a href="mailto:hello@pplfrst.studio" style="text-transform:none">hello@pplfrst.studio</a></dd></div>
+      <div class="rv"><dt>Online</dt><dd><b><a href="https://www.peoplefirst.eu.com" target="_blank" rel="noopener">peoplefirst.eu.com</a></b><a href="https://www.instagram.com/peoplefrst" target="_blank" rel="noopener">Instagram @peoplefrst</a></dd></div>
+      <div class="rv"><dt>Images</dt><dd><b>High-resolution campaign images</b><a href="https://drive.google.com/drive/folders/1-HqoBeVTceMiRiX9BOC0yCvkD-KIupHY" target="_blank" rel="noopener">Download from Google Drive →</a></dd></div>
+      <div class="rv"><dt>On request</dt><dd><b>Interviews and samples</b>Founder interviews in English and Russian. Samples for editorial shoots.</dd></div>
+    </dl>
+  </div>
+  <div class="wrap end">
+    <div class="mark rv"><span class="fit" data-fit="size">People First</span></div>
+    <div class="rv" style="margin-top:12px">
+      <p style="margin:0;font-weight:800;color:var(--red);font-size:clamp(14px,2.2vw,18px);letter-spacing:-.005em">Dedicated to simplify the art of dressing.</p>
+      <footer style="padding-top:4px"><span>A limited-run design house, based in Europe</span><span class="red">2026</span></footer>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=[].slice.call(document.querySelectorAll('.rv'));
+  if(!reduce&&'IntersectionObserver' in window){
+    var vh=window.innerHeight||800;
+    els.forEach(function(el){ if(el.getBoundingClientRect().top>vh*0.92) el.classList.add('pre'); });
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.remove('pre'); io.unobserve(e.target);} });
+    },{rootMargin:'0px 0px -8% 0px',threshold:0.06});
+    els.forEach(function(el){ if(el.classList.contains('pre')) io.observe(el); });
+    setTimeout(function(){ els.forEach(function(el){ if(el.getBoundingClientRect().top<window.innerHeight) el.classList.remove('pre'); }); },2500);
+  }
+  // stretch "People First" and the tagline to the full column width
+  var fits=[].slice.call(document.querySelectorAll('.fit'));
+  function fitAll(){
+    fits.forEach(function(el){
+      var box=el.parentElement, target=box.clientWidth;
+      if(!target) return;
+      if(el.getAttribute('data-fit')==='size'){
+        var fsz=100; el.style.fontSize=fsz+'px';
+        var sc=parseFloat(el.getAttribute('data-scale'))||1;
+        for(var k=0;k<3;k++){ var w=el.getBoundingClientRect().width; if(!w) break; fsz=fsz*target*sc/w*0.998; el.style.fontSize=fsz+'px'; }
+        var mx=parseFloat(el.getAttribute('data-max')); if(mx&&fsz>mx) el.style.fontSize=mx+'px';
+      } else {
+        el.style.letterSpacing='0.12em'; el.style.fontSize='';
+        var fs=parseFloat(getComputedStyle(el).fontSize);
+        var w2=el.getBoundingClientRect().width, n=el.textContent.length-1;
+        if(w2>target){ fs=fs*target/w2; el.style.fontSize=fs+'px'; w2=el.getBoundingClientRect().width; }
+        if(n>0) el.style.letterSpacing=(0.12*fs+(target-w2)/(n+1)-0.05)+'px';
+      }
+    });
+  }
+  fitAll();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fitAll);
+  window.addEventListener('resize',fitAll);
+
+  var prog=document.getElementById('prog');
+  var ticking=false;
+  function update(){
+    ticking=false;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    prog.style.transform='scaleX('+(h>0?Math.min(1,window.scrollY/h):0)+')';
+  }
+  window.addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(update);} },{passive:true});
+  window.addEventListener('resize',update);
+  update();
+})();
+</script>
+
+</body>
+</html>
