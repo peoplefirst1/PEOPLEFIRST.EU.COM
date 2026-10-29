@@ -100,7 +100,6 @@ section{padding-block:72px 0}
 .center .quote,.center .lede,.center .display,.center p{max-width:none;width:100%;text-align:justify;text-align-last:center;text-wrap:wrap;hyphens:none}
 .center .note{text-align:center}
 .center figure{width:100%}
-@media (max-width:600px){.center p.kids2{font-size:clamp(10px,2.95vw,14px);letter-spacing:-.01em}}
 .center .colours{justify-content:center}
 .lines.center li{text-wrap:wrap;text-align:justify;text-align-last:center}
 
@@ -262,7 +261,7 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
   </div>
   <figure class="full gap-m rv"><img src="img/s2942.jpg" width="1080" height="1350" alt="A family in matching red striped pyjama suits, the children upside down on the bed" loading="lazy"></figure>
   <div class="wrap stack gap-m center" style="gap:16px">
-    <p class="lede rv kids2"><b>Any piece from the collection</b> can be produced in a children’s size, <b class="red" style="white-space:nowrap">cut to individual measurements.</b></p>
+    <p class="lede rv kids2" data-lines="2"><b>Any piece from the collection</b> can be produced in a children’s size, <b class="red" style="white-space:nowrap">cut to individual measurements.</b></p>
     <p class="lede rv">Not a smaller version scaled to a standard size chart. The same process we use for adults: we take the child’s measurements and build the piece to fit exactly, with <b>the same cut, the same fabric, the same attention to detail.</b></p>
   </div>
   <div class="wrap pair gap-m rv">
@@ -385,9 +384,26 @@ footer{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-w
       }
     });
   }
-  fitAll();
-  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fitAll);
-  window.addEventListener('resize',fitAll);
+  // keep a paragraph to N lines by tightening letter-spacing only (font size stays)
+  var tight=[].slice.call(document.querySelectorAll('[data-lines]'));
+  function tightenAll(){
+    tight.forEach(function(el){
+      var want=parseInt(el.getAttribute('data-lines'),10);
+      el.style.letterSpacing='';
+      var lh=parseFloat(getComputedStyle(el).lineHeight);
+      var fs=parseFloat(getComputedStyle(el).fontSize);
+      var ls=0.02;
+      for(var i=0;i<40;i++){
+        if(Math.round(el.getBoundingClientRect().height/lh)<=want) break;
+        ls-=0.005; if(ls<-0.12) break;
+        el.style.letterSpacing=ls+'em';
+      }
+    });
+  }
+  function layout(){ fitAll(); tightenAll(); }
+  layout();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(layout);
+  window.addEventListener('resize',layout);
 
   var prog=document.getElementById('prog');
   var ticking=false;
